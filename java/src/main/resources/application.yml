@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/UAV_waimai?TimeZone=Asia/Shanghai
+    username: postgres
+    password: 123456
+    hikari:
+      maximum-pool-size: 5
+      connection-timeout: 5000
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false
+

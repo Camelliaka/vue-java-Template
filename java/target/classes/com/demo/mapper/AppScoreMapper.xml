@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.AppScoreMapper">
+
+    <resultMap id="BaseResultMap" type="com.demo.model.AppScore">
+            <id property="id" column="id" />
+            <result property="scoreitem" column="scoreitem" />
+            <result property="time" column="time" />
+            <result property="examtype" column="examtype" />
+            <result property="groupId" column="group_id" />
+            <result property="subcourseId" column="subcourse_id" />
+            <result property="remark" column="remark" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,scoreitem,time,examtype,group_id,subcourse_id,
+        remark
+    </sql>
+</mapper>
